@@ -15,7 +15,7 @@ I suggest treating this as beta quality for now. It's been working great for me 
 - Continues to send events received from Camect's event bus to Home Assistant's
 
 ## Installation ##
-Using [HACS](https://hacs.xyz/) to install is the recommended method.
+Using [HACS](https://hacs.xyz/) to install is the recommended method. Add the URL for this repo as a custom repository, and then install it using the Explore & Download button.
 
 If you install it manually you may need to add one line to your `configuration.yaml` before Home Assistant will detect it:
 ```yaml
