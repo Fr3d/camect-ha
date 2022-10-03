@@ -1,4 +1,4 @@
-I have written a more featureful Home Assistant integration for the [Camect Hub](https://camect.com/).
+As a learning exercise, I have written a more featureful Home Assistant integration for the [Camect Hub](https://camect.com/). I wanted fully-fledged devices and controllable entities for the hub and its cameras.
 
 Many thanks to the Camect team for providing something I could learn from with their [original Home Assistant code](https://github.com/camect/home-assistant-integration), and for their [camect-py](https://github.com/camect/camect-py) library.
 
@@ -12,7 +12,7 @@ I suggest treating this as beta quality for now. It's been working great for me 
 - Individual camera alert control
 - Automatic addition of cameras added to the Hub
 - Appropriate device statuses of cameras and switches if a camera goes offline
-- Continues to send events received from Camect's event bus to Home Assistant's
+- Continues to receive events from Camect's event bus to utilise within Home Assistant
 
 ## Installation ##
 Using [HACS](https://hacs.xyz/) to install is the recommended method. Add the URL for this repo as a custom repository, and then install it using the Explore & Download button.
