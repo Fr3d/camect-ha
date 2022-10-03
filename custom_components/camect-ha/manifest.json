@@ -2,12 +2,15 @@
   "domain": "camect",
   "name": "Camect",
   "config_flow": true,
-  "documentation": "https://www.home-assistant.io/integrations/camect",
-  "requirements": ["camect-py==0.2.0"],
-  "ssdp": [],
-  "zeroconf": [],
-  "homekit": {},
+  "documentation": "https://github.com/Fr3d/camect-ha",
+  "issue_tracker": "https://github.com/Fr3d/camect-ha/issues",
+  "version": "1.0.0",
+  "requirements": [
+    "camect-py==0.2.0"
+  ],
   "dependencies": [],
-  "codeowners": ["@Fr3d"],
+  "codeowners": [
+    "@Fr3d"
+  ],
   "iot_class": "local_push"
 }
