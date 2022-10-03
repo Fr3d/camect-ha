@@ -1,2 +1,32 @@
-# camect-ha
-Camect Hub integration for Home Assistant
+I have written a more featureful Home Assistant integration for the [Camect Hub](https://camect.com/).
+
+Many thanks to the Camect team for providing something I could learn from with their [original Home Assistant code](https://github.com/camect/home-assistant-integration), and for their [camect-py](https://github.com/camect/camect-py) library.
+
+I suggest treating this as beta quality for now. It's been working great for me for a few weeks, however YMMV 😊
+
+## Features ##
+- Hub mode control (Normal or At Home)
+- Camera feeds
+- Motion sensors for each camera
+- Detected object attribute for each camera
+- Individual camera alert control
+- Automatic addition of cameras added to the Hub
+- Appropriate device statuses of cameras and switches if a camera goes offline
+- Continues to send events received from Camect's event bus to Home Assistant's
+
+## Installation ##
+Using [HACS](https://hacs.xyz/) to install is the recommended method.
+
+If you install it manually you may need to add one line to your `configuration.yaml` before Home Assistant will detect it:
+```yaml
+camect:
+```
+
+1. Add a local account (not a "cloud" account like Google) to your Hub for the integration to authenticate with.
+   1. At the time of writing, the API only works for users granted Administrator privileges.
+   2. ![Add local Camect Hub user](https://github.com/Fr3d/camect-ha/blob/main/add_ha_user.png?raw=true)
+2. Once the integration is installed in Home Assistant, add the integration from your Settings -> Integrations page and search for Camect.
+3. Fill in the username and password you setup above.
+   1. Most people won't need to change the URL as `local.home.camect.com` provides a redirects to the Hub running in your home.
+4. Assuming it successfully connects after submitting the form, the integration will ask you to set the areas (rooms) for the Hub and every camera it finds.
+
