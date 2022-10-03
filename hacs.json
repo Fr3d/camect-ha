@@ -1,0 +1,6 @@
+{
+    "name": "Camect",
+    "render_readme": true,
+    "homeassistant": "2022.9",
+    "content_in_root": false
+}
