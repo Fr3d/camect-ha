@@ -5,7 +5,7 @@ Many thanks to the Camect team for providing something I could learn from with t
 I suggest treating this as beta quality for now. It's been working great for me for a few weeks, however YMMV 😊
 
 ## Features ##
-- Configurable within Home Assistant
+- Fully visible and configurable within Home Assistant
   - ![HA Integrations](https://github.com/Fr3d/camect-ha/blob/main/ha_integrations.png?raw=true)
 - Hub mode control (Normal or At Home)
   - ![Hub mode](https://github.com/Fr3d/camect-ha/blob/main/ha_hub_mode.png?raw=true)
