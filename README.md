@@ -38,6 +38,6 @@ camect:
 2. Once the integration is installed in Home Assistant, add the integration from your Settings -> Integrations page and search for Camect.
 3. Fill in the username and password you setup above.
    1. Most people won't need to change the URL as `local.home.camect.com` provides a redirects to the Hub running in your home.
-   2. ![Camect HA Config](https://github.com/Fr3d/camect-ha/blob/main/ha_config.png?raw=true)
+   2. ![Camect HA Config](https://github.com/Fr3d/camect-ha/blob/main/ha_configuration.png?raw=true)
 4. Assuming it successfully connects after submitting the form, the integration will ask you to set the areas (rooms) for the Hub and every camera it finds.
 
