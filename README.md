@@ -18,6 +18,12 @@ I suggest treating this as beta quality for now. It's been working great for me 
 - Appropriate device statuses of cameras and switches if a camera goes offline
 - Continues to receive events from Camect's event bus to utilise within Home Assistant
 
+## Requirements ##
+- Home Assistant 2022.9 or later
+- A Camect Hub device
+- Administrative access to your Hub(s)
+- Network access between Home Assistant and your Hub(s)
+
 ## Installation ##
 Using [HACS](https://hacs.xyz/) to install is the recommended method. Add the URL for this repo as a custom repository, and then install it using the Explore & Download button. Ensure you pick the right repo, as there's a similar one for the original Camect team's code.
 
@@ -32,5 +38,6 @@ camect:
 2. Once the integration is installed in Home Assistant, add the integration from your Settings -> Integrations page and search for Camect.
 3. Fill in the username and password you setup above.
    1. Most people won't need to change the URL as `local.home.camect.com` provides a redirects to the Hub running in your home.
+   2. ![Camect HA Config](https://github.com/Fr3d/camect-ha/blob/main/ha_config.png?raw=true)
 4. Assuming it successfully connects after submitting the form, the integration will ask you to set the areas (rooms) for the Hub and every camera it finds.
 
