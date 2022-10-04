@@ -17,21 +17,29 @@ I suggest treating this as beta quality for now. It's been working great for me 
 - Automatic addition of cameras added to the Hub
 - Appropriate device statuses of cameras and switches if a camera goes offline
 - Continues to receive events from Camect's event bus to utilise within Home Assistant
+- *Should* support multiple hubs (however I've not yet been able to verify this as I only own one)
 
 ## Requirements ##
 - Home Assistant 2022.9 or later
 - A Camect Hub device
-- Administrative access to your Hub(s)
-- Network access between Home Assistant and your Hub(s)
+- Administrative access to your Hub
+- Network access between Home Assistant and your Hub
 
 ## Installation ##
+### HACS ###
 Using [HACS](https://hacs.xyz/) to install is the recommended method. Add the URL for this repo as a custom repository, and then install it using the Explore & Download button.
-Ensure you pick the correct repo, as there's a similar one for the original Camect team's code. Look for this repo's description; "Camect Hub integration for Home Assistant / HACS".
 
-If you install it manually you _might_ need to add one line to your `configuration.yaml` before Home Assistant will detect it:
+Ensure you pick the correct repo, as there's a similar one for the original Camect team's code. Look for this repo's description; "**Camect Hub integration for Home Assistant / HACS**".
+
+### Manual Installation ###
+Copy `custom_components/camect` from this repo into your Home Assistant `/config/custom_components` directory.
+
+If you install it manually you *might* need to add one line to your `configuration.yaml` before Home Assistant will detect it:
 ```yaml
 camect:
 ```
+
+## Configuration ##
 
 1. Add a local account (not a "cloud" account like Google) to your Hub for the integration to authenticate with.
    1. At the time of writing, the API only works for users granted Administrator privileges.
