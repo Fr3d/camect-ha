@@ -10,11 +10,11 @@ I suggest treating this as beta quality for now. It's been working great for me 
 
 ## Features ##
 - Fully visible and configurable within Home Assistant
-  - ![HA Integrations](https://github.com/Fr3d/camect-ha/blob/main/ha_integrations.png?raw=true)
+  - ![HA Integrations](https://github.com/Fr3d/camect-ha/blob/main/.images/ha_integrations.png?raw=true)
 - Hub mode control (Normal or At Home)
-  - ![Hub mode](https://github.com/Fr3d/camect-ha/blob/main/ha_hub_mode.png?raw=true)
+  - ![Hub mode](https://github.com/Fr3d/camect-ha/blob/main/.images/ha_hub_mode.png?raw=true)
 - Full devices for each camera
-  - ![Camera device](https://github.com/Fr3d/camect-ha/blob/main/ha_camera_device.png?raw=true)
+  - ![Camera device](https://github.com/Fr3d/camect-ha/blob/main/.images/ha_camera_device.png?raw=true)
 - Motion sensors within each camera's device
 - Detected object attribute within each camera
 - Individual camera alert control
@@ -49,10 +49,10 @@ camect:
 
 1. Add a local account (not a "cloud" account like Google) to your Hub for the integration to authenticate with.
    1. At the time of writing, the API only works for users granted Administrator privileges.
-   2. ![Add local Camect Hub user](https://github.com/Fr3d/camect-ha/blob/main/add_ha_user.png?raw=true)
+   2. ![Add local Camect Hub user](https://github.com/Fr3d/camect-ha/blob/main/.images/add_ha_user.png?raw=true)
 2. Once the integration is installed in Home Assistant, add the integration from your Settings -> Integrations page and search for Camect.
 3. Fill in the username and password you setup above.
    1. Most people won't need to change the URL as `local.home.camect.com` provides a redirects to the Hub running in your home.
-   2. ![Camect HA Config](https://github.com/Fr3d/camect-ha/blob/main/ha_configuration.png?raw=true)
+   2. ![Camect HA Config](https://github.com/Fr3d/camect-ha/blob/main/.images/ha_configuration.png?raw=true)
 4. Assuming it successfully connects after submitting the form, the integration will ask you to set the areas (rooms) for the Hub and every camera it finds.
 
