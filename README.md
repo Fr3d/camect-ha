@@ -1,4 +1,6 @@
-As a learning exercise, I have written a more featureful Home Assistant integration for the [Camect Hub](https://camect.com/). It provides fully-fledged devices and entities for the hub, its cameras, and motion detection alerts.
+As a learning exercise, I have written a more featureful Home Assistant integration for the [Camect Hub](https://camect.com/).
+
+It provides fully-fledged devices and entities for the hub, its cameras, and motion detection alerts, making it much easier and quicker to setup automations for these events.
 
 Many thanks to the Camect team for providing something I could learn from with their [original Home Assistant code](https://github.com/camect/home-assistant-integration), and for their [camect-py](https://github.com/camect/camect-py) library.
 
