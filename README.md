@@ -27,7 +27,7 @@ I suggest treating this as beta quality for now. It's been working great for me 
 ## Installation ##
 Using [HACS](https://hacs.xyz/) to install is the recommended method. Add the URL for this repo as a custom repository, and then install it using the Explore & Download button. Ensure you pick the right repo, as there's a similar one for the original Camect team's code.
 
-If you install it manually you may need to add one line to your `configuration.yaml` before Home Assistant will detect it:
+If you install it manually you _might_ need to add one line to your `configuration.yaml` before Home Assistant will detect it:
 ```yaml
 camect:
 ```
