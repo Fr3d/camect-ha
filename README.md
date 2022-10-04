@@ -5,10 +5,14 @@ Many thanks to the Camect team for providing something I could learn from with t
 I suggest treating this as beta quality for now. It's been working great for me for a few weeks, however YMMV 😊
 
 ## Features ##
+- Configurable within Home Assistant
+  - ![HA Integrations](https://github.com/Fr3d/camect-ha/blob/main/ha_integrations.png?raw=true)
 - Hub mode control (Normal or At Home)
-- Camera feeds
-- Motion sensors for each camera
-- Detected object attribute for each camera
+  - ![Hub mode](https://github.com/Fr3d/camect-ha/blob/main/ha_hub_mode.png?raw=true)
+- Full devices for each camera
+  - ![Camera device](https://github.com/Fr3d/camect-ha/blob/main/ha_camera_device.png?raw=true)
+- Motion sensors within each camera's device
+- Detected object attribute within each camera
 - Individual camera alert control
 - Automatic addition of cameras added to the Hub
 - Appropriate device statuses of cameras and switches if a camera goes offline
