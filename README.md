@@ -26,7 +26,7 @@ I suggest treating this as beta quality for now. It's been working great for me 
 - Network access between Home Assistant and your Hub
 
 ## Installation ##
-If you have the original Camect integration installed, you'll need to archive or delete it from your Home Assistant `custom_components` directory, and remove the configuration lines from `configuration.yaml`.
+If you have the original Camect integration installed, you'll need to archive or delete it from your Home Assistant `custom_components` directory, remove the configuration lines from `configuration.yaml`, and clean up the orphaned camera entities from Home Assistant.
 
 ### HACS ###
 Using [HACS](https://hacs.xyz/) to install is the recommended method. Add the URL for this repo as a custom repository, and then install it using the Explore & Download button.
