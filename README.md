@@ -6,7 +6,7 @@ It provides fully-fledged devices and entities for the hub, its cameras, and mot
 
 Many thanks to the Camect team for providing something I could learn from with their [original Home Assistant code](https://github.com/camect/home-assistant-integration), and for their [camect-py](https://github.com/camect/camect-py) library.
 
-I suggest treating this as beta quality for now. It's been working great for me for a few weeks, however YMMV 😊
+As this is still fairly new code, I can't promise it's flawless. It's been working great for me for a few weeks, however YMMV 😊. If you run into bugs please open an [issue on GitHub](https://github.com/Fr3d/camect-ha/issues).
 
 ## Features ##
 - Fully visible and configurable within Home Assistant
