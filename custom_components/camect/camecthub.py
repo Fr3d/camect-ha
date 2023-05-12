@@ -217,7 +217,7 @@ class CamectHub(Entity):
             # ATTR_ENTITY_ID: cam_entity_id,
             ATTR_DEVICE_ID: cam_entity_id,
             CONF_TYPE: evt_type,
-            ATTR_RAW_DATA: str(evt),
+            ATTR_RAW_DATA: evt,
         }
         _LOGGER.info("Firing camera event to bus: %s", str(data))
         self.hass.bus.async_fire(ATTR_CAMECT_EVENT, data)
