@@ -56,3 +56,21 @@ camect:
    2. ![Camect HA Config](https://github.com/Fr3d/camect-ha/blob/main/.images/ha_configuration.png?raw=true)
 4. Assuming it successfully connects after submitting the form, the integration will ask you to set the areas (rooms) for the Hub and every camera it finds.
 
+## Automation ##
+You can listen for `camect_event` to trigger automations in Home Assistant and use the different attributes in `trigger.event.data` to get more information about the event. For example,
+```
+- id: 'Motion detected'
+  alias: Motion detected
+  description: 'Sends a notification when motion is detected'
+  trigger:
+    platform: event
+    event_type: camect_event
+    event_data:
+      type: alert
+  action:
+    service: script.notify_phone
+    data_template:
+      message: '{{ trigger.event.data.raw_data[''desc''] }}'
+      url: '{{ trigger.event.data.raw_data[''url''] }}'
+
+```
