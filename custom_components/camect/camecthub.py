@@ -220,7 +220,7 @@ class CamectHub(Entity):
             ATTR_RAW_DATA: evt,
         }
         _LOGGER.info("Firing camera event to bus: %s", str(data))
-        self.hass.bus.async_fire(ATTR_CAMECT_EVENT, data)
+        self.hass.bus.fire(ATTR_CAMECT_EVENT, data)
         # self.log_event(
         #     cam_entity_id,
         #     "{} Motion Alert".format(evt["cam_name"]),
@@ -233,7 +233,7 @@ class CamectHub(Entity):
         data[LOGBOOK_ENTRY_DOMAIN] = DOMAIN
         if entity_id is not None:
             data[LOGBOOK_ENTRY_ENTITY_ID] = entity_id
-        self.hass.bus.async_fire(EVENT_LOGBOOK_ENTRY, data)
+        self.hass.bus.fire(EVENT_LOGBOOK_ENTRY, data)
 
 
 async def _update_listener(hass: HomeAssistant, entry: ConfigEntry) -> None:
