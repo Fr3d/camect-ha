@@ -6,7 +6,7 @@
   "issue_tracker": "https://github.com/Fr3d/camect-ha/issues",
   "version": "1.0.0",
   "requirements": [
-    "camect-py==0.2.0"
+    "camect-py==0.2.1"
   ],
   "dependencies": [],
   "codeowners": [
